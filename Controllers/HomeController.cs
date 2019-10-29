@@ -8,7 +8,8 @@ namespace ApiExploration.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var allDestinations = Destination.GetDestinations();
+            return View(allDestinations);
         }
     }
 }

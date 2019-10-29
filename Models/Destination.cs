@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
 
 
 namespace ApiExploration.Models
@@ -29,6 +30,7 @@ namespace ApiExploration.Models
             var result = apiCallTask.Result;
 
             JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
+            Console.WriteLine(jsonResponse);
             List<Destination> destinationList = JsonConvert.DeserializeObject<List<Destination>>(jsonResponse.ToString());
 
             return destinationList;
