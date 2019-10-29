@@ -4,7 +4,7 @@ using ApiExploration.Models;
 
 namespace ApiExploration.Controllers
 {
-    public class HomeController : Controller
+    public class DestinationsController : Controller
     {
         public IActionResult Index()
         {
