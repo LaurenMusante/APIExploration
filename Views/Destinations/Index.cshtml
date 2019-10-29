@@ -1,0 +1,13 @@
+  
+@using ApiExploration.Models
+
+<h1>Destination Details!</h1>
+<ul>
+@foreach (Destination destination in Model)
+{
+    <li>City: @destination.City</li>
+    <li>Country: @destination.Country</li>
+    <li>Review: @destination.Review</li>
+    <li>Rating: @destination.Rating</li>    
+}
+</ul>
